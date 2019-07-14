@@ -46,6 +46,10 @@ module.exports = {
         use: ['vue-style-loader', 'css-loader']
       },
       {
+        test: /\.(gif|svg|jpg|png)$/,
+        use: ['file-loader']
+      },
+      {
         enforce: 'pre',
         exclude: [
           '/node_modules/',
